@@ -1,7 +1,8 @@
 {% extends 'base.html' %}
 {% block content %}
 <a href="{% url 'delete' todo.id %}" class="btn btn-danger"  >Delete</a>
-    <h1>{{ todo.title }}</h1>
+<a href="{% url 'update' todo.id %}" class="btn btn-info"  >Update</a>
+<h1>{{ todo.title }}</h1>
     <p>{{ todo.body }}</p>
     <small>{{ todo.created }}</small>
 {% endblock %}
